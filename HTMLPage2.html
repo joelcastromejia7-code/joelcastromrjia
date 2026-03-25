@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título actualizado -->
+    <title>Mi Primera Página Web de Joel Castro Mejia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            /* Fondo cambiado a rojo */
+            background-color: #FF0000; /* Rojo */
+            /* Color de las letras cambiado a azul */
+            color: #0000FF; /* Azul */
+        }
+
+        header {
+            background-color: #4CAF50; /* Manteniendo el color original del encabezado */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #e7e7e7;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #4CAF50; /* Manteniendo el color original de los enlaces de navegación */
+                font-weight: bold;
+            }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777; /* Manteniendo el color original del pie de página */
+        }
+
+        .product-image {
+            display: block;
+            max-width: 300px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Estilos para las noticias */
+        .news-section {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f0f0f0; /* Un fondo ligeramente diferente para las noticias */
+            border-radius: 5px;
+        }
+
+        .news-item {
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+        }
+
+            .news-item:last-child {
+                border-bottom: none;
+            }
+
+        .news-title {
+            font-weight: bold;
+            color: #0000FF; /* Azul para títulos de noticias */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>¡Bienvenido a Mi Página Web de Joel Castro Mejia!</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#noticias">Noticias de Fútbol</a>
+        <a href="#acerca-de">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio">
+            <h2>Sección de Inicio</h2>
+            <p>Esta es la sección principal de mi página web. Aquí puedes colocar información importante, como una introducción a tu sitio o las últimas noticias.</p>
+            <img src="https://i.imgur.com/u9oH0j9.jpeg" alt="Producto Colágeno Hidrolizado" class="product-image">
+            <p>¡Espero que disfrutes tu visita!</p>
+        </section>
+
+        <hr>
+
+        <!-- Sección de Noticias de Fútbol -->
+        <section id="noticias" class="news-section">
+            <h2>Noticias de Fútbol</h2>
+            <div class="news-item">
+                <h3 class="news-title">¡Real Madrid Gana la Champions League!</h3>
+                <p>El Real Madrid se coronó campeón de la UEFA Champions League tras una emocionante final contra el Liverpool. El marcador final fue 1-0 con un gol de Vinícius Júnior.</p>
+            </div>
+            <div class="news-item">
+                <h3 class="news-title">Messi se Corona Campeón de la Copa América</h3>
+                <p>Lionel Messi finalmente levanta la Copa América con la selección argentina, venciendo a Brasil en una reñida final. Un hito histórico para el astro argentino.</p>
+            </div>
+            <div class="news-item">
+                <h3 class="news-title">La Liga Española: Atlético de Madrid se Lleva el Título</h3>
+                <p>El Atlético de Madrid se alzó con el campeonato de La Liga en una temporada llena de sorpresas y competencia hasta la última jornada.</p>
+            </div>
+            <div class="news-item">
+                <h3 class="news-title">El Mundial de Qatar 2022: Un Espectáculo Inolvidable</h3>
+                <p>La Copa del Mundo celebrada en Qatar dejó momentos memorables, coronando a Argentina como campeona tras una final épica contra Francia.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="acerca-de">
+            <h2>Acerca de Nosotros</h2>
+            <p>En esta sección, puedes contar la historia de tu proyecto, describir quién eres o qué ofreces. Es un buen lugar para generar confianza con tus visitantes.</p>
+            <ul>
+                <li>Detalle 1</li>
+                <li>Detalle 2</li>
+                <li>Detalle 3</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contacto">
+            <h2>Ponte en Contacto</h2>
+            <p>Si tienes alguna pregunta o deseas colaborar, no dudes en contactarnos. Puedes usar el siguiente formulario o enviarnos un correo electrónico.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mi Primera Página Web de Joel Castro Mejia. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
